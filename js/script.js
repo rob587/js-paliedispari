@@ -4,28 +4,28 @@
 
 
 //dichiarazione variabile//
-// const nameRequest = prompt("Inserisci la Parola")
+const nameRequest = prompt("Inserisci la Parola")
 
-// function reverseString(text){
-//     let result = "";
+function reverseString(text){
+    let result = "";
 
-//     for (let i = text.length-1; i>=0; i--){
-//         console.log(text[i]);
-//         result+=text[i];
-//     }
+    for (let i = text.length-1; i>=0; i--){
+        console.log(text[i]);
+        result+=text[i];
+    }
 
-//     return result;
-// }
+    return result;
+}
 
-// const reversedString = reverseString(nameRequest)
+const reversedString = reverseString(nameRequest)
 
 
-// if (nameRequest.toLowerCase()===reversedString.toLowerCase()){
-//     console.log("è Palindroma")
+if (nameRequest.toLowerCase()===reversedString.toLowerCase()){
+    console.log("è Palindroma")
 
-// }else{
-//     console.log(" non è Palindroma")
-// }
+}else{
+    console.log(" non è Palindroma")
+}
      
 
 
@@ -46,25 +46,40 @@ const evenOdd = prompt("scegli tra pari o dispari")
 
 const numberRequest = parseInt(prompt("scegli un numero tra 1 e 5"))
 
-
+//generare numero tra 1 e 5//
 
 function generateRandomNumbers (min, max){
     return Math.floor(Math.random()*(max - min + 1)) + min;
 }
 
+//assegnazione a pc il risultato della FUNZIONE//
 const pcNumber = generateRandomNumbers(1,5);
 
+//dichiarazione della variabile somma
 let sum = numberRequest+pcNumber
 
+//controllo della variabile pari o dispari
 function checkEvenOrOdd(){
+
     if(sum % 2 === 0){
-        console.log("Pari")
+       return "Pari"
 
     }else{
-    console.log("Dispari") 
+    return "Dispari" 
     }
     
     }
-
+//stampa il risultato della funzione pari o dispari//
     console.log(checkEvenOrOdd());
     
+
+    //controllo della funzione hai vinto o hai perso in base al risultato//
+    function result(){
+      if(evenOdd==checkEvenOrOdd()){
+        console.log("Hai vinto")
+      }else{
+        console.log("Hai perso")
+      }
+    }
+
+    console.log(result())
