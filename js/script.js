@@ -4,4 +4,15 @@
 
 
 //dichiarazione variabile//
-const nameRequest = prompt("Inserisci il nome")
+const nameRequest = prompt("Inserisci la Parola")
+
+function reverseString(text){
+    let result = "";
+
+    for (let i = text.length-1; i>=0; i--){
+        console.log(text[i]);
+        result+=text[i];
+    }
+
+    return result;
+}
