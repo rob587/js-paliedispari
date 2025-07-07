@@ -16,3 +16,13 @@ function reverseString(text){
 
     return result;
 }
+
+const reversedString = reverseString(nameRequest)
+
+
+if (nameRequest.toLowerCase()===reversedString.toLowerCase()){
+    console.log("è Palindroma")
+
+}else{
+    console.log(" non è Palindroma")
+}
