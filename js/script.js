@@ -56,4 +56,15 @@ const pcNumber = generateRandomNumbers(1,5);
 
 let sum = numberRequest+pcNumber
 
-function sum(){}
+function checkEvenOrOdd(){
+    if(sum % 2 === 0){
+        console.log("Pari")
+
+    }else{
+    console.log("Dispari") 
+    }
+    
+    }
+
+    console.log(checkEvenOrOdd());
+    
