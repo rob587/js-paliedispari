@@ -4,28 +4,28 @@
 
 
 //dichiarazione variabile//
-const nameRequest = prompt("Inserisci la Parola")
+// const nameRequest = prompt("Inserisci la Parola")
 
-function reverseString(text){
-    let result = "";
+// function reverseString(text){
+//     let result = "";
 
-    for (let i = text.length-1; i>=0; i--){
-        console.log(text[i]);
-        result+=text[i];
-    }
+//     for (let i = text.length-1; i>=0; i--){
+//         console.log(text[i]);
+//         result+=text[i];
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-const reversedString = reverseString(nameRequest)
+// const reversedString = reverseString(nameRequest)
 
 
-if (nameRequest.toLowerCase()===reversedString.toLowerCase()){
-    console.log("è Palindroma")
+// if (nameRequest.toLowerCase()===reversedString.toLowerCase()){
+//     console.log("è Palindroma")
 
-}else{
-    console.log(" non è Palindroma")
-}
+// }else{
+//     console.log(" non è Palindroma")
+// }
      
 
 
@@ -46,6 +46,14 @@ const evenOdd = prompt("scegli tra pari o dispari")
 
 const numberRequest = parseInt(prompt("scegli un numero tra 1 e 5"))
 
+
+
 function generateRandomNumbers (min, max){
     return Math.floor(Math.random()*(max - min + 1)) + min;
 }
+
+const pcNumber = generateRandomNumbers(1,5);
+
+let sum = numberRequest+pcNumber
+
+function sum(){}
