@@ -44,4 +44,8 @@ if (nameRequest.toLowerCase()===reversedString.toLowerCase()){
 const evenOdd = prompt("scegli tra pari o dispari")
 
 
-const number = parseInt(prompt("scegli un numero tra 1 e 5"))
+const numberRequest = parseInt(prompt("scegli un numero tra 1 e 5"))
+
+function generateRandomNumbers (min, max){
+    return Math.floor(Math.random()*(max - min + 1)) + min;
+}
