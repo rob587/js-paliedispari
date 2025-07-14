@@ -64,7 +64,8 @@ function checkEvenOrOdd(){
     if(sum % 2 === 0){
        return "Pari"
 
-    }else{
+    }
+    else{
     return "Dispari" 
     }
     
@@ -73,13 +74,13 @@ function checkEvenOrOdd(){
     console.log(checkEvenOrOdd());
     
 
-    //controllo della funzione hai vinto o hai perso in base al risultato//
-    function result(){
-      if(evenOdd==checkEvenOrOdd()){
-        console.log("Hai vinto")
-      }else{
-        console.log("Hai perso")
-      }
+ //controllo della funzione hai vinto o hai perso in base al risultato//
+function result(){
+  if(evenOdd==checkEvenOrOdd()){
+    console.log("Hai vinto")
+    }else{
+    console.log("Hai perso")
     }
+}
 
     console.log(result())
